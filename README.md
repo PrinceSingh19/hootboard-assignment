@@ -17,7 +17,7 @@ This project contains the code for getting the current weather data of a particu
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/PrinceSingh19/hootboard-assignment.git
 ```
 
 Go to the project directory
@@ -60,7 +60,7 @@ To deploy this project run
 
 ## Demo
 
-Insert gif or link to demo
+https://weather-hootboard.netlify.app/
 
 &nbsp;
 

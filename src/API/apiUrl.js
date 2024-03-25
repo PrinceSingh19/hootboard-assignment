@@ -6,6 +6,6 @@ export const apiUrl = (lat, lon) =>
 
 // api url for getting the current weather data based on the query passed by user
 export const geoCodeApiUrl = (queryLocation) =>
-	`http://api.openweathermap.org/geo/1.0/direct?q=${queryLocation}&appid=${
+	`https://api.openweathermap.org/geo/1.0/direct?q=${queryLocation}&appid=${
 		import.meta.env.VITE_WEATHER_API_KEY
 	}`;
