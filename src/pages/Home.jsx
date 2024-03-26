@@ -4,8 +4,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-import Header from "./components/Header";
-import { getCurrentPositionAsync, getGeoCodeCoords, showWeatherData } from "./API/getRequest";
+import Header from "../components/Header";
+import { getCurrentPositionAsync, getGeoCodeCoords, showWeatherData } from "../API/getRequest";
 
 function Home() {
 	const inputRef = useRef(null);

@@ -213,6 +213,25 @@ button:hover {
 	animation: rotate 1s ease-out infinite;
 }
 
+#error-page {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--white);
+	text-align: center;
+}
+
+.not-found {
+	font-size: 20px;
+}
+.homeLink {
+	margin-top: 15px;
+	text-align: center;
+	color: var(--white);
+	font-size: 20px;
+}
+
 @keyframes rotate {
 	from {
 		transform: rotate(0deg);

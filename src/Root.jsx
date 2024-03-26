@@ -1,10 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Weather from "./components/Weather";
-import Home from "./Home";
+import Weather from "./pages/Weather";
+import Home from "./pages/Home";
+import ErrorPage from "./pages/ErrorPage";
 const router = createBrowserRouter([
 	{
 		path: "/",
 		Component: Home,
+		errorElement: <ErrorPage />,
 	},
 	{
 		path: "/weather",

@@ -4,21 +4,22 @@ import { TfiLocationPin } from "react-icons/tfi";
 import { BsThermometerSun } from "react-icons/bs";
 import { ImDroplet } from "react-icons/im";
 import { GiWindTurbine } from "react-icons/gi";
-import { SlSpeedometer } from "react-icons/sl";
+import { FaRegEye } from "react-icons/fa";
 
-import Header from "./Header";
+import Header from "../components/Header";
 
 const Weather = () => {
 	// const params
 	const { state } = useLocation(); // getting the state data sent from the storage
 	const {
-		main: { feels_like, humidity, temp, sea_level },
+		main: { feels_like, humidity, temp },
 		name,
 		sys: { country },
 		weather: {
 			0: { description, icon },
 		},
 		wind: { speed },
+		visibility,
 	} = state; // extrating the required data from the api data
 
 	const additionalElement = (
@@ -68,18 +69,18 @@ const Weather = () => {
 						<span>Humidity</span>
 					</div>
 				</div>
-				<div className="flex-center">
+				<div className="flex-center border-top">
 					<GiWindTurbine className="weather-parameters-icon" />
 					<div className="flex-col ">
 						<span className="weather-parameters-header">{speed} m/s</span>
 						<span>Wind Speed</span>
 					</div>
 				</div>
-				<div className="flex-center">
-					<SlSpeedometer className="weather-parameters-icon" />
+				<div className="flex-center border-top">
+					<FaRegEye className="weather-parameters-icon" />
 					<div className="flex-col ">
-						<span className="weather-parameters-header">{sea_level} m</span>
-						<span>Sea Level</span>
+						<span className="weather-parameters-header">{visibility} m</span>
+						<span>Visibility</span>
 					</div>
 				</div>
 			</div>
