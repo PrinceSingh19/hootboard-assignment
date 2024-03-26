@@ -46,6 +46,8 @@ To run this project, you will need to add the following environment variables to
 
 `VITE_WEATHER_API_KEY`
 
+To get the API_KEY you need to visit the openweathermap site and create a free account and then get an API_KEY from there
+
 &nbsp;
 
 ## To build the project
